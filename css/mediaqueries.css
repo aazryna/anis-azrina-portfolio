@@ -1,0 +1,503 @@
+
+@media screen and (max-device-width:1400px), screen and (max-width:1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 10rem; /*size between section*/
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1200px), screen and (max-width:1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
+     /* Adjust z-index and positioning for the profile section */
+     #profile {
+        position: relative;
+        z-index: 1; /* Set a lower z-index */
+    }
+
+    /* Adjust z-index and positioning for the hamburger menu */
+    #hamburger-nav {
+        position: relative;
+        z-index: 2; /* Set a higher z-index */
+    }
+
+    /* Ensure the image is behind the hamburger menu */
+    .anis-image {
+        position: relative;
+        z-index: 0; /* Set an even lower z-index */
+    }
+    
+
+    #about,
+    .section-container {
+        display: block;
+    }
+
+    .icon-container {
+        margin: -35px 0; /* Adjust the top and bottom margin as needed */
+    }
+
+
+    .about-pic {
+        margin-top: -30px;
+    }
+
+
+    #profile,
+    .section-container {
+        display: block;
+        width: 100%;
+    }
+
+    .section__text {
+        margin-top: -100px;
+    }
+ 
+    /* .anis-image {
+        width: 200px; 
+        height: auto; 
+    }  */
+
+    /* .anis-image {
+        width: 100px; 
+        height: auto; 
+        margin-bottom: 2px; 
+    } */
+
+    .section__text {
+        margin-top: 1px; /* Adjust margin-top as needed */
+    }
+
+     .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 50px; 
+        margin-bottom: 100px;
+        margin-top: -30px;
+    }
+
+    
+    .article-container article p {
+        margin-top: 5px; /* Adjust spacing between icon and text */
+    }
+
+    .article-container article img.icon {
+        width: 50px; /* Adjust icon size */
+        height: 50px; /* Adjust icon size */
+    }
+
+    
+    /* .article-container article {
+        width: 100%; 
+        max-width: 10px; 
+        text-align: center; 
+        
+    }  */
+
+    /* .container {
+        padding: 10px 50px;
+        position: relative;
+        width: 100%; */
+
+    .numbered-list {
+        font-size: 10px; /* Change font size as needed */
+    }
+
+    .text-box h3,
+    .text-box h4 {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+        gap: 20px; /* Adjust the gap between projects */
+        margin-bottom: 20px;
+    }
+    
+    .pic {
+        width: 100%;
+    }
+    
+    .project-btn {
+        position: static;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+       }
+    
+    .contact-info-container {
+        margin: 0;
+       }
+
+       .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 100px;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 450px;
+    }
+
+    /* .style-swiper-pagination-wrap {
+        white-space: nowrap; 
+        width: 2px;
+        justify-content: center;
+    } */
+/* 
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    } */
+
+     .style-swiper-pagination-wrap {
+        white-space: nowrap; 
+        width: 2px;
+        justify-content: center;
+        width: auto; 
+    }
+    
+    .grid-container {
+        grid-template-rows: auto auto auto; /* Adjust rows for smaller screens */
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+}
+    
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 10rem; /*size between section*/
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+     .anis-image {
+        width: 40vh; 
+        height: auto; 
+        margin-bottom: 2px; 
+    } 
+
+    .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 350px;
+    }
+    
+}
+
+@media screen and (max-device-width:912px) {
+
+    .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 280px;
+    }
+
+}
+
+@media screen and (max-device-width:820px), screen and (max-width:820px) {
+
+    .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 250px;
+    }
+
+}
+
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+.anis-image {
+    height: 70vh;
+    width: 50vh;
+}
+
+.container {
+    width: 50%;
+}
+
+.grid-container {
+    grid-template-rows: auto auto auto; /* Adjust rows for smaller screens */
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+}
+
+.small-video {
+    max-width: 250px; /* Adjust as needed */
+    height: 200px;
+}
+
+/* .modal-text {
+    position: relative;
+    font-size: 10px;
+} */
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.close {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    right: 5px; /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
+}
+
+.about-details-container {
+    text-align: center; /* Center the content horizontally */
+}
+
+.about-pic {
+    display: block; /* Ensure margin: auto works properly */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 250px;
+}
+
+
+}
+
+
+
+
+
+/* Adjustments for smaller screens */
+@media screen and (max-device-width:600px), screen and (max-width:600px) {
+    /* Other adjustments... */
+
+    /* Prevent horizontal scrolling */
+    body {
+        overflow-x: hidden;
+    }
+
+    .anis-image {
+        width: 350px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 200px;
+    }
+
+    
+    .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 100px;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .article-container article img.icon {
+        width: 30px; 
+        height: 30px;
+    }
+
+    .waviy span {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    
+
+    section:nth-child(2) {
+        color: #fff; /* White text color */
+        background: #1D212B; /* Background color */
+        width: 100%; /* Ensure the section spans the full width */
+        padding-right: 0; /* Ensure there's no padding that may affect width */
+        padding-left: 0; /* Ensure there's no padding that may affect width */
+        margin-right: 0; /* Ensure there's no margin that may affect width */
+        margin-left: 0; /* Ensure there's no margin that may affect width */
+    }
+
+    
+    .edu {
+        margin: 0 10rem;
+    }
+
+    .left-container {
+        width:100%;
+        left: -6rem;
+    }
+
+    .right-container {
+        left: 35%; /* Adjust position for smaller screens */
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-device-width:430px), screen and (max-width:430px) {
+
+    #about {
+        margin-bottom: 10rem; /*size between section*/
+    }
+
+    .details-container {
+        margin-top: -200px;
+    
+    }
+
+
+    }
+
+
+
+@media screen and (max-device-width:425px), screen and (max-width:425px) {
+
+    #about {
+        margin-bottom: 10rem; /*size between section*/
+    }
+
+    
+    
+
+ 
+
+    .right-container {
+        left: 35%; /* Adjust position for smaller screens */
+        width: 100%;
+    }
+
+    .left-container {
+        width:100%
+    }
+
+    .details-container {
+        margin-top: -200px;
+    
+    }
+
+    
+ }
+
+
+    
+@media screen and (max-device-width:375px), screen and (max-width:375px) {
+
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 40px; 
+        margin-bottom: 100px;
+        margin-top: -30px;
+    }
+
+    .about-details-container {
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .about-pic {
+        display: block; /* Ensure margin: auto works properly */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 100px;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .anis-image {
+        width: 350px; 
+        height: auto; 
+        margin-bottom: 50px;
+    }
+
+
+    }
+
+    @media screen and (max-device-width:320px), screen and (max-width:320px) {
+
+        .article-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 40px; 
+            margin-bottom: 100px;
+            margin-top: -30px;
+        }
+
+        .about-details-container {
+            text-align: center; /* Center the content horizontally */
+        }
+        
+        .about-pic {
+            display: block; /* Ensure margin: auto works properly */
+            margin: 0 auto; /* Center the image horizontally */
+            margin-bottom: 100px;
+            max-width: 50%; /* Ensure the image doesn't exceed its container */
+            height: 60%; /* Maintain aspect ratio */
+            
+            margin-right: 130px;
+        }
+
+        .article-container article p {
+            font-size: 10px;
+        }
+
+        .article-container article img.icon {
+            width: 20px; 
+            height: 20px;
+        }
+
+        .about-pic {
+            width: 300px;
+            height: 400px;
+    
+        }
+    
+    
+        }

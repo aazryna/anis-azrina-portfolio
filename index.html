@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anis's Portfolio</title>
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/style-swiper.css" type="text/css"/>
+
+
+
+     <!-- Optional: Load FontAwesome from CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous"
+rel="stylesheet">
+
+
+
+    
+</head>
+<body>
+
+    <nav id="desktop-nav">
+            
+            <div>
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                 <li><a href="#education">Education</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Anis Azrina</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                 <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <!-- <img src="./assets/shape.png" class="shape-image" /> -->
+                <img src="./image/girl.png" class="anis-image" />
+                
+            </div>
+            
+        
+            <div class="section__text">
+                <h1 class="title">
+                    <div class="waviy">
+                        <span style="--i:1">A</span>
+                        <span style="--i:2">N</span>
+                        <span style="--i:3">I</span>
+                        <span style="--i:4">S</span>
+                        <span style="--i:5">A</span>
+                        <span style="--i:6">Z</span>
+                        <span style="--i:7">R</span>
+                        <span style="--i:8">I</span>
+                        <span style="--i:9">N</span>
+                        <span style="--i:10">A</span>
+                     
+                       </div>
+                </h1>
+                <p class="section__text__p2">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Hello World!", "I Want To Be a", "Website Developer" ]'></a>
+                    </p><br>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./resume/resume.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./image/linkedin.png" 
+                        alt="My LinkedIn profile"
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/anis-azrina/'"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION-->
+
+        <section id="about">
+            <div class="me">
+                <p class="section__text__p1">Get To Know More</p>
+                <h1 class="section-title">About Me</h1>
+            <div class="section-container reveal">
+            
+                <div class="section__pic-container_about">
+                    <img 
+                        src="./image/aboutme.png"
+                        alt="profile picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                                <h3>Website Developer.</h3>
+                                <p>Hello! My name is Anis Azrina. I am 25 years old and currently live in Bayan Lepas,
+                                     Pulau Pinang, with my parents. I am a fresh graduate who recently completed my 
+                                     Bachelor's Degree in Computer Science with a specialization in Multimedia Computing.
+                                      I am now actively seeking a job that aligns with my career aspirations. I hope you 
+                                      can assess my abilities through my website design.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="article-container">
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/html.png" alt="HTML" class="icon" />
+                                <p>HTML</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/css.png" alt="CSS" class="icon" />
+                                <p>CSS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/c++.png" alt="C++" class="icon" />
+                                <p>C++</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/csharp.png" alt="C#" class="icon" />
+                                <p>C#</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/java.png" alt="Java" class="icon" />
+                                <p>Java</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="icon-container">
+                                <img src="./image/flutter.png" alt="Flutter" class="icon" />
+                                <p>Flutter</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="edu">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Education & Achievement</h1>
+          
+                 <!-- ******* Education Sections Starts ******* -->
+            <div class="timeline reveal">
+                
+                <div class="container left-container">
+                    <div class="img-background"></div>
+                    <img src="./image/sksp.png">
+                    <div class="text-box">
+                        <h4>2006 - 2011</h4>
+                        <h3>SK Seri Permai</h3>
+                        <p>
+                            <ol class="numbered-list">
+                                <li><span class="dot"></span>Actively involved in a 'bahasa bermadah' competition</li>
+                                <li><span class="dot"></span>I received 2As, 2Bs and 1C for UPSR.</li>
+                            </ol>
+                        </p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                
+
+                <div class="container right-container">
+                    <div class="img-background"></div>
+                    <img src="./image/rtu.png">
+                        <div class="text-box">
+                                <h4>2012 - 2016</h4>
+                                <h3>SMK Raja Tun Uda</h3>
+                                <p>
+                                    <ol class="numbered-list">
+                                        <li><span class="dot"></span>I have served as a library prefect.</li>
+                                        <li><span class="dot"></span>I have received two academic excellence awards in the subject of "Tasawur Islam."</li>
+                                        <li><span class="dot"></span>I received 1A and 7Bs for SPM.</li>
+                                    </ol>
+                                </p>
+                                
+                                
+                                <span class="right-container-arrow"></span>
+                        </div>
+                        </div>
+
+                        <div class="container left-container">
+                            <div class="img-background"></div>
+                            <img src="./image/pbu.png">
+                            <div class="text-box">
+                                <h4>2017 - 2020</h4>
+                                <h3>Politeknik Balik Pulau</h3>
+                                <p> 
+                                    <ol class="numbered-list">
+                                        <li><span class="dot"></span>Received the Dean's award for semesters 1, 3, 4, 5 and 6.</li>
+                                        <li><span class="dot"></span>Got selected and participated in the eMicro Content Competition for "rundingan kemerdekaan".</li>
+                                        <li><span class="dot"></span>Participated as committee members for the PBU International Showdown 2019 at Balik Pulau Polytechnic.</li>
+                                        <li><span class="dot"></span>Participated as committee members for the Sports Carnival 2018.</li>
+                                        <li><span class="dot"></span>Participated in product innovation in English.</li>
+                                        <li><span class="dot"></span>I received a 3.5 CGPA.</li>
+                                    </ol>
+                                </p>
+                                <span class="left-container-arrow"></span>
+                            </div>
+                        </div>
+
+                            <div class="container right-container">
+                                <div class="img-background"></div>
+                                <img src="./image/uitm.png">
+                                <div class="text-box">
+                                    <h4>2020 - 2023</h4>
+                                    <h3>UITM Shah Alam</h3>
+                                    <p>
+                                        <ol class="numbered-list">
+                                            <li><span class="dot"></span>Received the Dean's award for semesters 2, 3, 5, and 6.</li>
+                                            <li><span class="dot"></span>Achieved a silver award in the KPPIM Innovation Talent 2023 for "AnimalStory - Interactive Animal Storytelling App With Image Recognition."</li>
+                                            <li><span class="dot"></span>Achieved a bronze award in the Invention, Innovation & Design Exposition IIDEX 2023 for "AnimalStory - Interactive Animal Storytelling App With Image Recognition."</li>
+                                            <li><span class="dot"></span>I received a 3.49 CGPA.</li>
+                                        </ol>
+                                    </p>
+                                    <span class="right-container-arrow"></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                        <!-- ******* Education Sections Ends ******* -->
+        </section>
+
+        <section id="projects">
+            <div class="pro">
+                <p class="section__text__p1">Browse My Recent</p>
+                <h1 class="title">Projects</h1>
+                <div class="section-container reveal">
+                
+            <div class="experience-details-container "></div>
+                <input type="radio" name="Photos" id="check1" checked>
+                <input type="radio" name="Photos" id="check2">
+                <input type="radio" name="Photos" id="check3">
+                <input type="radio" name="Photos" id="check4">
+            
+            <div id="container">
+                <div class="top-content">
+                <label for="check1">All</label>
+                <label for="check2">Application</label>
+                <label for="check3">Game</label>
+                <label for="check4">Websites</label>
+            </div>
+
+            <div class="photo-gallery">
+                 <!-- FIRST PROJECT-->
+                <div class="pic app">
+                    <img src="./image/project1.png">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('modal1')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+                </div>
+               
+                <div id="modal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <div class="modal-text">
+                            <div class="grid-container">
+                                <div class="grid-item video-container">
+                                    <video controls class="small-video">
+                                        <source src="./video/fypvideo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="grid-item project-info">
+                            <h2>Project Information</h2>
+                            <table class="project-info-table">
+                                <tr>
+                                    <td><b>Name:</b></td>
+                                    <td>Interactive Animal Storytelling using Image Recognition</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project:</b></td>
+                                    <td>Individual Final Year Project</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Type:</b></td>
+                                    <td>Application</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tools:</b></td>
+                                    <td>Android Studio, Adobe Animate, TensorFlow, Audacity</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </table>
+                            <br>
+                            <h2>About This Project</h2>
+                            <p>This is a Final Year Project developed using Android Studio. 
+                                The application offers interactive animal stories for kids, incorporating image recognition 
+                                technology. Children can enjoy reading while enhancing their critical thinking skills. 
+                                It includes three unique stories. I use Canva and Adobe Animate for animation, and 
+                                Tensorflow for image recognition. For every narrative, I also recorded and edited my voice. 
+                                In addition, I successfully uploaded this application to the Play Store. Here's a link to the PlayStore 
+                                <a href="https://play.google.com/store/apps/details?id=com.zadzed89.animalstory&pcampaignid=web_share">
+                                    <span style="color: red;">AnimalStory.</span>
+                                </a></p>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                 <!-- SECOND PROJECT-->
+                <div class="pic app">
+                    <img src="./image/project2.png">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('modal2')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+                </div>
+                
+               
+                <div id="modal2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                        <div class="modal-text">
+                            <div class="grid-container">
+                                <div class="grid-item video-container">
+                                    <video controls class="small-video">
+                                        <source src="./video/calculategpa.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="grid-item project-info">
+                            <h2>Project Information</h2>
+                            <table class="project-info-table">
+                                <tr>
+                                    <td><b>Name:</b></td>
+                                    <td>Calculate GPA's Student</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project:</b></td>
+                                    <td>Group</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Type:</b></td>
+                                    <td>Application</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tools:</b></td>
+                                    <td>Android Studio</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </table>
+                            <br>
+                            <h2>About This Project</h2>
+                            <p>This application is designed to calculate the GPA of each student. Its main function is to determine the minimum score required to pass a semester's results. Although it's a group project, I contributed my skills primarily to the application's design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+                <!-- THIRD PROJECT-->
+                <div class="pic game">
+                    <img src="./image/project3.png">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('modal3')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+                </div>
+                
+                <div id="modal3" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <div class="modal-text">
+                            <div class="grid-container">
+                                <div class="grid-item video-container">
+                                    <video controls class="small-video">
+                                        <source src="./video/mousyvideo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="grid-item project-info">
+                            <h2>Project Information</h2>
+                            <table class="project-info-table">
+                                <tr>
+                                    <td><b>Name:</b></td>
+                                    <td>Mousy Running</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project:</b></td>
+                                    <td>Group</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Type:</b></td>
+                                    <td>Game</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tools:</b></td>
+                                    <td>Unity</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </table>
+                            <br>
+                            <h2>About This Project</h2>
+                            <p>This game entails a mouse navigating through obstacles to reach the finish line. 
+                                While it was a group project, I took on the responsibility of designing and ensuring the functionality of the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- FORTH PROJECT-->
+                <div class="pic app">
+                    <img src="./image/project4.png">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('modal4')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+                </div>
+
+                <div id="modal4" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal4')">&times;</span>
+                        <div class="modal-text">
+                            <div class="grid-container">
+                                <div class="grid-item video-container">
+                                    <video controls class="small-video">
+                                        <source src="./video/resumeapp.MP4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="grid-item project-info">
+                            <h2>Project Information</h2>
+                            <table class="project-info-table">
+                                <tr>
+                                    <td><b>Name:</b></td>
+                                    <td>Resume Apps</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project:</b></td>
+                                    <td>Individual</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Type:</b></td>
+                                    <td>Application</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tools:</b></td>
+                                    <td>Android Studio</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </table>
+                            <br>
+                            <h2>About This Project</h2>
+                            <p>This is my personal portfolio resume application. This application has database
+                                 which It requires user to login for access.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <!-- FIFTH PROJECT-->
+            <div class="pic web">
+                <img src="./image/cs1.png">
+                <button class="btn btn-color-2 project-btn" onclick="openModal('modal5')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+            </div>
+
+            <!-- The modal -->
+            <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal5')">&times;</span>
+                            <div class="grid-container">
+                            <!-- First Column: Images Slider -->
+                            <div class="grid-item image-container">
+                                <div id="myStyleSwiper" class="style-swiper-container">
+                                <!-- Optional: This div just lets the buttons vertically center with the slides minus the pagination  -->
+                            <div class="style-swiper-slide-btn-wrap">
+                                <!-- Optional: Previous button -->
+                                    <button class="style-swiper-btn-prev" title="scroll previous">
+                                        <i class="fa fa-chevron-left"></i><!-- FontAwesome Icon-->
+                                    </button>
+                                <!-- Required: Slides -->
+                                <div class="style-swiper-slides hide-scrollbar">
+                                    <img src="./image/cs1.png" alt="Image 1">
+                                    <img src="./image/cs2.png" alt="Image 2">
+                                    <img src="./image/cs3.png" alt="Image 3">
+                                    <img src="./image/cs4.png" alt="Image 4">
+                                    <img src="./image/cs5.png" alt="Image 5">
+                                    <img src="./image/cs6.png" alt="Image 6">
+                                </div>
+                                <!-- Optional: Next button -->
+                                    <button class="style-swiper-btn-next" title="scroll next">
+                                        <i class="fa fa-chevron-right"></i><!-- FontAwesome Icon-->
+                                    </button>
+                            </div>
+                            <!-- Optional: Pagination -->
+                                <div class="style-swiper-pagination-wrap">
+                                    <ol class="style-swiper-pagination"></ol>
+                                        </div>
+                                    </div>
+                            </div>
+            <!-- Second Column: Project Information -->
+            <div class="grid-item">
+                <div class="modal-text">
+                    <h2>Project Information</h2>
+                    <table class="project-info-table">
+                        <tr>
+                            <td><b>Name:</b></td>
+                            <td>Cotton's Shop Website</td>
+                        </tr>
+                        <tr>
+                            <td><b>Project:</b></td>
+                            <td>Group</td>
+                        </tr>
+                        <tr>
+                            <td><b>Type:</b></td>
+                            <td>Website</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tools:</b></td>
+                            <td>Neatbeans</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </table>
+                    <br>
+                    <h2>About This Project</h2>
+                    <p>This project involves the sale of T-shirts for both girls and boys. 
+                        The website requires users to log in to shop, and administrators 
+                        to log in to access functions such as adding, updating, and deleting
+                         items from the system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+         <!-- SIXTH PROJECT-->
+         <div class="pic web">
+            <img src="./image/project6.png">
+                <button class="btn btn-color-2 project-btn" onclick="openModal('modal6')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">About Project</button>
+            </div>
+        
+            <!-- The modal -->
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <div class="grid-container">
+            <!-- First Column: Images Slider -->
+            <div class="grid-item image-container">
+                <div id="myStyleSwiperModal6" class="style-swiper-container">
+                    <!-- Optional: This div just lets the buttons vertically center with the slides minus the pagination  -->
+                    <div class="style-swiper-slide-btn-wrap">
+                        <!-- Optional: Previous button -->
+                        <button class="style-swiper-btn-prev" title="scroll previous">
+                            <i class="fa fa-chevron-left"></i><!-- FontAwesome Icon-->
+                        </button>
+                        <!-- Required: Slides -->
+                        <div class="style-swiper-slides hide-scrollbar">
+                            <img src="./image/p1.png" alt="Image 1">
+                            <img src="./image/p2.png" alt="Image 2">
+                            <img src="./image/p3.png" alt="Image 3">
+                            <img src="./image/p4.png" alt="Image 4">
+                        </div>
+                        <!-- Optional: Next button -->
+                        <button class="style-swiper-btn-next" title="scroll next">
+                            <i class="fa fa-chevron-right"></i><!-- FontAwesome Icon-->
+                        </button>
+                    </div>
+                    <!-- Optional: Pagination -->
+                    <div class="style-swiper-pagination-wrap">
+                        <ol class="style-swiper-pagination"></ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Column: Project Information -->
+            <div class="grid-item">
+                <div class="modal-text">
+                    <h2>Project Information</h2>
+                    <table class="project-info-table">
+                        <tr>
+                            <td><b>Name:</b></td>
+                            <td>Cotton's Shop Website</td>
+                        </tr>
+                        <tr>
+                            <td><b>Project:</b></td>
+                            <td>Group</td>
+                        </tr>
+                        <tr>
+                            <td><b>Type:</b></td>
+                            <td>Website</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tools:</b></td>
+                            <td>Notepad</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </table>
+                    <br>
+                    <h2>About This Project</h2>
+                    <p>The main objective of this project is to design the pizza website's user interface.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+   <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                        src="./image/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                        />
+                        <p><a href="mailto:anisazrina99@gmail.com">anisazrina99@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                        src="./image/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com/in/anis-azrina/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                         <li><a href="#education">Education</a></li>
+                         <li><a href="#projects">Projects</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Anis Azrina. All Rights Reserved.</p>
+        </footer>
+
+   
+    <script src="js/script.js"></script>
+    
+		<script src="js/style-swiper.js"></script>
+		<script>
+			var styleSwiper = new StyleSwiper({
+				debug:true,
+				el:document.getElementById("myStyleSwiper")
+			});
+
+            var styleSwiper = new StyleSwiper({
+				debug:true,
+				el:document.getElementById("myStyleSwiperModal6")
+			});
+
+            
+		</script>
+
+    
+</body>
+</html>

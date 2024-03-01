@@ -1,0 +1,97 @@
+ /* Container */
+ .style-swiper-container {
+	position:relative;
+}
+
+.style-swiper-slide-btn-wrap {
+	position:relative;
+}
+
+/* Slides */
+.style-swiper-slides {
+	display:flex;
+	overflow-x:auto;
+	scroll-snap-type:mandatory; /* Fallback if "x" not supported */
+	scroll-snap-type:x mandatory;
+	-ms-scroll-snap-type:mandatory;
+	-webkit-scroll-snap-type:mandatory;
+	-webkit-scroll-snap-destination:0% 0%;
+	-webkit-overflow-scrolling:touch;
+	/* Note:IE11 only supports touch - graceful fallback is standard scroll area */
+}
+.style-swiper-slides > * {
+	flex-shrink:0;
+	max-width:100%;
+	scroll-snap-align:start;
+}
+
+/* Buttons */
+.style-swiper-btn-prev, .style-swiper-btn-next {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	z-index:1;
+	background-color:black;
+	border:0;
+	font-size:2em;
+	margin:0;
+	padding:0;
+	cursor:pointer;
+	color:#FFF;
+	padding:10px;
+	box-sizing:border-box;
+}
+.style-swiper-btn-prev {
+	left:0;
+}
+.style-swiper-btn-next {
+	right:0;
+}
+
+/* Pagination */
+.style-swiper-pagination {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.style-swiper-pagination li {
+    display: inline-block;
+    margin: 0 5px; /* Adjust spacing between pagination bullets */
+}
+
+.style-swiper-pagination li button {
+    width: 10px; /* Adjust bullet size */
+    height: 10px; /* Adjust bullet size */
+    border: none;
+    border-radius: 50%; /* Rounded bullets */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
+	justify-content: center; /* Center the pagination horizontally */
+    align-items: center; /* Center the pagination vertically */
+    cursor: pointer;
+}
+
+.style-swiper-pagination li.active button {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust active bullet color */
+}
+
+/* .style-swiper-page.style-swiper-visible button {
+	background-color:#F80;
+} */
+.style-swiper-page.style-swiper-active button {
+	background-color:#F80;
+}
+
+/* Scrollbar */
+.hide-scrollbar {
+	scrollbar-width:none; /* Firefox */
+	-ms-overflow-style:none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+	display:none;
+}
+
+/* Hidden */
+.style-swiper-hidden {
+	display:none;
+}
